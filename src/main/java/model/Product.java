@@ -35,11 +35,11 @@ public class Product {
         this.productID = productID;
     }
 
-    public int getShopID() {
+    public GroceryShop getShopID() {
         return shopID;
     }
 
-    public void setShopID(int shopID) {
+    public void setShopID(GroceryShop shopID) {
         this.shopID = shopID;
     }
 
