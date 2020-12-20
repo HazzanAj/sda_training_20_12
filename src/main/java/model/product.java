@@ -1,7 +1,5 @@
 package model;
 
-import com.mysql.cj.x.protobuf.MysqlxDatatypes;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +17,7 @@ public class product {
     @Column(name = "shopID")
     private int shopID;
     @Column(name = "productName")
-    private MysqlxDatatypes.Scalar.String productName;
+    private String productName;
     @Column(name = "productPrice")
     private int productPrice;
 
@@ -39,11 +37,11 @@ public class product {
         this.shopID = shopID;
     }
 
-    public MysqlxDatatypes.Scalar.String getProductName() {
+    public String getProductName() {
         return productName;
     }
 
-    public void setProductName(MysqlxDatatypes.Scalar.String productName) {
+    public void setProductName(String productName) {
         this.productName = productName;
     }
 
