@@ -11,8 +11,11 @@ import javax.persistence.Table;
 import java.lang.String;
 import javax.persistence.*;
 
+@Entity
+@Table(name = "product")
 public class Product {
-    @Table(name = "products")
+
+
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column(name = "productID")
     private int productID;
