@@ -1,15 +1,17 @@
 package model;
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+import java.lang.String;
 import javax.persistence.*;
 
-public class product {
+public class Product {
     @Table(name = "products")
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column(name = "productID")
