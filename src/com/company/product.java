@@ -1,9 +1,21 @@
 package com.company;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 public class product {
+    @Table(name = "products")
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Column(name = "productID")
     private int productID;
+    @Column(name = "shopID")
     private int shopID;
+    @Column(name = "productName")
     private String productName;
+    @Column(name = "productPrice")
     private int productPrice;
 
     public int getProductID() {
