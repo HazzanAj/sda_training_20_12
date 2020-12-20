@@ -10,6 +10,7 @@ public class GroceryShopRepository {
 
     private EntityManager rm;
 
+    
     public GroceryShopRepository() {
         rm = DbUtil.getEntityManager();
     }
