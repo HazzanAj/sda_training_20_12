@@ -12,13 +12,14 @@ public class Product {
 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
 
-
+    @Id
     @Column(name = "productID")
     private int productID;
 
     @ManyToOne
     @JoinColumn(name = "shopID")
-    GroceryShop shopID;
+
+   private  GroceryShop shopID;
 
     @Column(name = "productName")
     private String productName;
