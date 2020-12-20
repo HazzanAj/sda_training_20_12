@@ -10,16 +10,17 @@ import javax.persistence.*;
 public class Product {
 
 
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+
 
     @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column(name = "productID")
     private int productID;
 
     @ManyToOne
     @JoinColumn(name = "shopID")
 
-   private  GroceryShop shopID;
+   private GroceryShop shopID;
 
     @Column(name = "productName")
     private String productName;
