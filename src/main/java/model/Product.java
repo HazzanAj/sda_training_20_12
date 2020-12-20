@@ -13,7 +13,7 @@ public class Product {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
 
 
-    @JoinColumn(name = "productID")
+    @Column(name = "productID")
     private int productID;
 
     @ManyToOne
