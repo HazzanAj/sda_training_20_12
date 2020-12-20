@@ -12,7 +12,7 @@ public class Product {
 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
 
-    @ManyToOne
+
     @JoinColumn(name = "productID")
     private int productID;
 
