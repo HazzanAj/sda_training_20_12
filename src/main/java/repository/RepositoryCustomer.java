@@ -1,7 +1,7 @@
 package repository;
 
 import model.Customer;
-import util.DBUtil;
+import util.DbUtil;
 
 import javax.persistence.EntityManager;
 import java.util.List;
@@ -10,7 +10,7 @@ public class RepositoryCustomer {
 
     private EntityManager em;
 
-    public RepositoryCustomer() { em = DBUtil.getEntityManager();
+    public RepositoryCustomer() { em = DbUtil.getEntityManager();
     }
 
     public void saveCustomer(Customer customer) {
