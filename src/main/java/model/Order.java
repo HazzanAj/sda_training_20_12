@@ -7,18 +7,18 @@ import javax.persistence.*;
 
 public class Order {
 
-@Id
-@GeneratedValue (strategy = GenerationType.IDENTITY)
-@Column(name = "orderId")
-private int orderId;
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Column(name = "orderId")
+    private int orderId;
 
-@ManyToOne
-@JoinColumn(name = "productId")
-private Product product;
+    @ManyToOne
+    @JoinColumn(name = "productId")
+    private Product product;
 
-@ManyToOne
-@JoinColumn(name = "customerId")
-private Customer customer;
+    @ManyToOne
+    @JoinColumn(name = "customerId")
+    private Customer customer;
 
     public int getOrderId() {
         return orderId;
