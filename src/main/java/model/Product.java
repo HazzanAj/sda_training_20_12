@@ -18,7 +18,7 @@ public class Product {
 
     @ManyToOne
     @JoinColumn(name = "shopID")
-    private int shopID;
+    GroceryShop shopID;
 
     @Column(name = "productName")
     private String productName;
