@@ -10,12 +10,10 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerId;
+
     private String customerName;
     private String customerAddress;
     private String customerEmail;
-
-    @OneToMany()
-    private List<Order> order;
 
     public int getCustomerId() {
         return customerId;
@@ -47,14 +45,6 @@ public class Customer {
 
     public void setCustomerEmail(String customerEmail) {
         this.customerEmail = customerEmail;
-    }
-
-    public List<Order> getOrder() {
-        return order;
-    }
-
-    public void setOrder(List<Order> order) {
-        this.order = order;
     }
 
     public String toString() {
